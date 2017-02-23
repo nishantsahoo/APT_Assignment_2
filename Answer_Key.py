@@ -1,5 +1,7 @@
 list_1 = [1, 2, 3, 4, 5]
 list_2 = [1, 3, 5, 7, 9]
+set_1 = {1, 2, 3, 4, 5}
+set_2 = {1, 3, 5, 7, 9}
 
 
 def q1():  # Answer to the first question
@@ -31,23 +33,23 @@ def q2():  # Answer to the second question
 
     # code for difference
     difference = []
-    for each in list_1:
-        if each not in list_2:
+    for each in set_1:
+        if each not in set_2:
             difference.append(each)
 
-        print('Difference of', list_1, 'and', list_2, 'is:', difference)
+        print('Difference of', set_1, 'and', set_2, 'is:', difference)
 
     # code for symmetric difference
     sym_difference = []
-    for each in list_1:
-        if each not in list_2:
+    for each in set_1:
+        if each not in set_2:
             sym_difference.append(each)
 
-    for each in list_2:
-        if each not in list_1:
+    for each in set_2:
+        if each not in set_1:
             sym_difference.append(each)
 
-    print('Symmetric difference of', list_1, 'and', list_2, 'is:', sym_difference)
+    print('Symmetric difference of', set_1, 'and', set_2, 'is:', sym_difference)
 
     # End of the second question
 
