@@ -37,7 +37,7 @@ def q2():  # Answer to the second question
         if each not in set_2:
             difference.append(each)
 
-        print('Difference of', set_1, 'and', set_2, 'is:', difference)
+    print('Difference of', set_1, 'and', set_2, 'is:', difference)
 
     # code for symmetric difference
     sym_difference = []
